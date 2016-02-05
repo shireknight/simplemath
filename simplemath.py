@@ -10,15 +10,15 @@ class App():
     def __init__(self):
         if not self.name:
             self.name = raw_input('Enter your name: ')
-        hello = 'Hello ' + self.name + ', Would you like to try a math problem? (Y, N): '
+        hello = 'Hello ' + self.name + ', Would you like to try a math problem? (y, n): '
         read = raw_input(hello)
         self.start(read)
 
 
     def start(self, read):
-        if read == 'Y':
+        if read == 'y':
             self.stepTwo()
-        elif read == 'N':
+        elif read == 'n':
             sys.exit()
         else:
             # recursively call the app constructor if none of the above
